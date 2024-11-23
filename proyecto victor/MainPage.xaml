@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="proyecto_victor.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Image
+                Source="https://1.bp.blogspot.com/-00U-_TyKyHo/YQRQjCoj-SI/AAAAAAAAVjM/jLyx_yd_zdY7UfQ08-hB6bfpI2X9if2IgCLcBGAsYHQ/s312/Liga_MX_logo.png"
+                HeightRequest="185"
+                Aspect="AspectFit"
+                SemanticProperties.Description="dot net bot in a race car number eight" />
+
+            <Label
+                Text="LIGA MX 2024"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1"
+                TextColor="BLACK" />
+
+            <VerticalStackLayout>
+                <Entry Placeholder="Usuario" TextColor="White" PlaceholderColor="Gray" />
+                <Entry Placeholder="Contraseña" IsPassword="True" TextColor="White" PlaceholderColor="Gray" />
+            </VerticalStackLayout>
+
+            <Button
+                x:Name="registrate"
+                Text="REGÍSTRATE"
+                SemanticProperties.Hint="Counts the number of times you click"
+                BackgroundColor="Gold"
+                TextColor="Black"
+                HorizontalOptions="Fill" />
+
+            <Button
+                x:Name="ccinvitado"
+                Text="CONTINUAR COMO INVITADO"
+                SemanticProperties.Hint="Counts the number of times you click"
+                BackgroundColor="Gold"
+                TextColor="Black"
+                HorizontalOptions="Fill" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
